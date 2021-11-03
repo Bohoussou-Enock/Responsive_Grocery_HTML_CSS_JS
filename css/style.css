@@ -1,36 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-:root {
-    --orange: #ff7800;
-    --black: #130f40;
-    --light-color: #666;
-    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    --border: .2rem solid rgba(0, 0, 0, .1);
-    --outline: .1rem solid rgba(0, 0, 0, .1);
-    --outline-hover: .2rem solid var(--black);
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
 }
 
-* {
+*{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin:0; padding:0;
     box-sizing: border-box;
-    outline: none;
-    border: none;
+    outline: none; border:none;
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
 }
 
-html {
+html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
 
-body {
-    background: #eee;
+body{
+    background:#eee;
 }
 
 section{
@@ -70,41 +68,39 @@ section{
     color:#fff;
 }
 
-.header {
+.header{
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top:0; left:0; right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
-    background: #fff;
+    padding:2rem 9%;
+    background:#fff;
     box-shadow: var(--box-shadow);
 }
 
-.header .logo {
+.header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--black);
+    color:var(--black);
 }
 
-.header .logo i {
-    color: var(--orange);
+.header .logo i{
+    color:var(--orange);
 }
 
-.header .navbar a {
+.header .navbar a{
     font-size: 1.7rem;
-    margin: 0 1rem;
-    color: var(--black);
+    margin:0 1rem;
+    color:var(--black);
 }
 
-.header .navbar a:hover {
-    color: var(--orange);
+.header .navbar a:hover{
+    color:var(--orange);
 }
 
-.header .icons div {
+.header .icons div{
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
@@ -128,10 +124,9 @@ section{
 
 .header .search-form{
     position: absolute;
-    top: 110%; 
-    right: -110%;
+    top:110%; right:-110%;
     width: 50rem;
-    height: 5rem;
+    height:5rem;
     background: #fff;
     border-radius: .5rem;
     overflow: hidden;
@@ -151,14 +146,14 @@ section{
     background: none;
     text-transform: none;
     font-size: 1.6rem;
-    color: var(--black);
+    color:var(--black);
     padding:0 1.5rem;
 }
 
 .header .search-form label{
     font-size: 2.2rem;
     padding-right: 1.5rem;
-    color: var(--black);
+    color:var(--black);
     cursor: pointer;
 }
 
@@ -166,10 +161,9 @@ section{
     color:var(--orange);
 }
 
-.header .shopping-cart {
+.header .shopping-cart{
     position: absolute;
-    top:110%; 
-    right: -110%;
+    top:110%; right:-110%;
     padding:1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -187,7 +181,7 @@ section{
     align-items: center;
     gap:1rem;
     position: relative;
-    margin: 1rem 0;
+    margin:1rem 0;
 }
 
 .header .shopping-cart .box img{
@@ -197,8 +191,7 @@ section{
 .header .shopping-cart .box .fa-trash{
     font-size: 2rem;
     position: absolute;
-    top:50%; 
-    right:2rem;
+    top:50%; right:2rem;
     cursor: pointer;
     color:var(--light-color);
     transform: translateY(-50%);
@@ -238,8 +231,7 @@ section{
 
 .header .login-form{
     position: absolute;
-    top: 110%; 
-    right: -110%;
+    top:110%; right:-110%;
     width:35rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
@@ -261,19 +253,19 @@ section{
 
 .header .login-form .box{
     width: 100%;
-    margin: .7rem 0;
+    margin:.7rem 0;
     background:#eee;
     border-radius: .5rem;
-    padding: 1rem;
+    padding:1rem;
     font-size: 1.6rem;
-    color: var(--black);
+    color:var(--black);
     text-transform: none;
 }
 
 .header .login-form p{
     font-size: 1.4rem;
-    padding: .5rem 0;
-    color: var(--light-color);
+    padding:.5rem 0;
+    color:var(--light-color);
 }
 
 .header .login-form p a{
@@ -294,7 +286,7 @@ section{
 
 .home .content{
     text-align: center;
-    width: 60rem;
+    width:60rem;
 }
 
 .home .content h3{
@@ -334,7 +326,7 @@ section{
 }
 
 .features .box-container .box img{
-    margin: 1rem 0;
+    margin:1rem 0;
     height: 15rem;
 }
 
@@ -642,22 +634,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:991px){
@@ -688,8 +664,7 @@ section{
 
     .header .navbar{
         position: absolute;
-        top:110%; 
-        right:-110%;
+        top:110%; right:-110%;
         width:30rem;
         box-shadow: var(--box-shadow);
         border-radius: .5rem;
